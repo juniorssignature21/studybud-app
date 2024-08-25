@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-*w4cg5l#6%s@snv0ds$@_@=1q_6j!!ty+zna06@9-w0)7=2z-e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['TalkGod', 'localhost', '127.0.0.0']
 
 
 # Application definition
@@ -49,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',  
 ]
 
 ROOT_URLCONF = 'studybud.urls'
